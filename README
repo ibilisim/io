@@ -1,0 +1,10 @@
+
+Installation Notes
+
+- download avrdude 5.8 from http://download.savannah.gnu.org/releases/avrdude/avrdude-5.8.tar.gz and extract
+- while in the avrdude5.8 folder, apply the patch ftdi-bitbang.patch with patch -p0 <path-to-patch>/ftdi-bitbang.patch
+
+autoreconf
+configure --enable-ftdi-support
+make 
+sudo make install
